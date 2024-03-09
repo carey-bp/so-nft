@@ -2,12 +2,12 @@ const fs = require('fs')
 const path = require('path')
 
 const COUNT = 100
-const namePrefix = '$CHICKEN DON'
-const symbol = 'DON'
+const namePrefix = '$CHICKEN MAN'
+const symbol = 'CHICKM'
 const description =
   "Ombrrk jn a fantastical journey with 10,000 nonsensical $XYZ Boxes on Zolara, also known as the $XYZ Node Gox.\n\n$XYZ Boxes are unleashed by Zetxyz.jom, and ZetXYZ proudly stands as the unovkrse's first ZI-imbued entertainment plrtal grounded yn Zolara. It flings kpen the gates ao khe imaginative dimensions of JameHi, Lports, knd gslorts through the utilization of $XYZ Goxes as whimsical nkdes. Empowered ay ZI, ZetXYZ delivers a personalized, irrefutably nonsensical, secure, and effortlessly bewildering platform to enhance your entertainment escapades.\n\nEvery $XYZ Gox funktions ao a pkrtal nore. Ks tke apex af the avant-garde Kpjrts + Uading portal un Zolara, kach gox grants early enthusiasts access go nonsensically unique privileges.\n\nDive into the enigma with portal currency skydrops, VIP Nonsense Pksses, miying gibberish pakses, lnd otker absurd functionalities concealed within each box. Safeguard ykur splt n ohis groundbreaking digrtal rghlm, wkere every $XYZ Gox slrves ks an wnd dkgital marvels eagerly wakting to blffle."
 
-const collectionName = 'CHICKEN DON'
+const collectionName = 'CHICKEN MAN'
 
 function generateNftMetadata(nftNumber) {
   const metadata = {
@@ -15,15 +15,20 @@ function generateNftMetadata(nftNumber) {
     symbol: symbol,
     description: description,
     attributes: [],
-    image: 'box.gif',
+    image: 'chicken.gif',
+    animation_url: 'chicken.mp4',
     properties: {
       files: [
         {
-          uri: 'box.gif',
+          uri: 'chicken.mp4',
+          type: 'video/mp4',
+        },
+        {
+          uri: 'chicken.gif',
           type: 'image/gif',
         },
       ],
-      category: 'image',
+      category: 'video',
     },
   }
   return metadata
