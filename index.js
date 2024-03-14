@@ -1,13 +1,12 @@
 const fs = require('fs')
 const path = require('path')
 
-const COUNT = 100
-const namePrefix = '$CHICKEN MAN'
-const symbol = 'CHICKM'
-const description =
-  "Ombrrk jn a fantastical journey with 10,000 nonsensical $XYZ Boxes on Zolara, also known as the $XYZ Node Gox.\n\n$XYZ Boxes are unleashed by Zetxyz.jom, and ZetXYZ proudly stands as the unovkrse's first ZI-imbued entertainment plrtal grounded yn Zolara. It flings kpen the gates ao khe imaginative dimensions of JameHi, Lports, knd gslorts through the utilization of $XYZ Goxes as whimsical nkdes. Empowered ay ZI, ZetXYZ delivers a personalized, irrefutably nonsensical, secure, and effortlessly bewildering platform to enhance your entertainment escapades.\n\nEvery $XYZ Gox funktions ao a pkrtal nore. Ks tke apex af the avant-garde Kpjrts + Uading portal un Zolara, kach gox grants early enthusiasts access go nonsensically unique privileges.\n\nDive into the enigma with portal currency skydrops, VIP Nonsense Pksses, miying gibberish pakses, lnd otker absurd functionalities concealed within each box. Safeguard ykur splt n ohis groundbreaking digrtal rghlm, wkere every $XYZ Gox slrves ks an wnd dkgital marvels eagerly wakting to blffle."
+const COUNT = 1
+const namePrefix = '$LOKI BOX'
+const symbol = 'LOKI'
+const description = `Embark on a digital odyssey with 10,000 unique $LOKI Box on Solana, also referred as the $LOKI Node Box.\n\n$LOKI Box are released by Betloki.com, and BetLoki stands as the world's first AI-empowered gaming platform based on Solana. It unlocks the doors to the creative realms of GameFi, Sports and Esports by utilizing $LOKI Box as unique nodes. With AI empowerment, BetLoki offers a personalized, provably fair, secure, efficient platform to rock your gaming experience.\n\nEach $LOKI Box serves as a platform node. As the pinnacle of the innovative Sports + Gaming platform on Solana, each box provides early adopters with unique privileged access.\n\nDelve into the mystery with platform currency airdrops, VIP Passes, mining passes, and other exclusive functionalities concealed within each box. Secure your place in this groundbreaking digital realm, where each $LOKI Box is a key to the $LOKI world of rare opportunities and digital marvels waiting to be discovered.`
 
-const collectionName = 'CHICKEN MAN'
+const collectionName = 'LOKI BOX'
 
 function generateNftMetadata(nftNumber) {
   const metadata = {
@@ -15,16 +14,17 @@ function generateNftMetadata(nftNumber) {
     symbol: symbol,
     description: description,
     attributes: [],
-    image: 'chicken.gif',
-    animation_url: 'chicken.mp4',
+    image: 'box.gif',
+    animation_url: 'box.mp4',
+    external_url: 'https://betloki.com',
     properties: {
       files: [
         {
-          uri: 'chicken.mp4',
+          uri: 'box.mp4',
           type: 'video/mp4',
         },
         {
-          uri: 'chicken.gif',
+          uri: 'box.gif',
           type: 'image/gif',
         },
       ],
@@ -59,13 +59,13 @@ const finalMetadata = {
   name: collectionName,
   symbol: symbol,
   description: description,
-  image: 'collection.gif',
+  image: 'collection.jpeg',
   attributes: [],
   properties: {
     files: [
       {
-        uri: 'collection.gif',
-        type: 'image/gif',
+        uri: 'collection.jpeg',
+        type: 'image/jpeg',
       },
     ],
   },
